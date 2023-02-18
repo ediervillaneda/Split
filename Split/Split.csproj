@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <StartupObject>Split.Program</StartupObject>
+    <PlatformTarget>x64</PlatformTarget>
+    <Title>Split For Claris</Title>
+    <PackageIcon>export.png</PackageIcon>
+    <Description>Hace un split de la cadena que necesita procesar mi novia.</Description>
+    <Copyright>Todos los derechos reservados, para mi novia, dueña y señora.</Copyright>
+    <NeutralLanguage>es-CO</NeutralLanguage>
+    <ApplicationIcon>export.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>full</DebugType>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DebugType>full</DebugType>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="export.ico" />
+  </ItemGroup>
+
+</Project>
